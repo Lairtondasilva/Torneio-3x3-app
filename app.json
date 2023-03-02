@@ -2,33 +2,64 @@
   "expo": {
     "name": "Torneio-3x3-app",
     "slug": "Torneio-3x3-app",
-    "version": "1.0.0",
+    "version": "1.0.2",
     "orientation": "portrait",
-    "icon": "./assets/icon.jpg",
+    "icon": "",
     "userInterfaceStyle": "light",
+    "scheme": "torneio3x3app",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "cover",
-      "backgroundColor": "#000"
+      "backgroundColor": "#1F2430"
     },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app accesses your photos to let you share them with your friends."
+        }
+      ]
+    ],
     "updates": {
       "fallbackToCacheTimeout": 0
     },
     "assetBundlePatterns": [
-      "**/*"
+      "assets/*"
     ],
     "ios": {
       "supportsTablet": true
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/icon.jpg",
+        "foregroundImage": "",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "permissions": [
+        "android.permission.RECORD_AUDIO"
+      ],
+      "package": "com.lairtondasilva.Torneio3x3app"
     },
     "web": {
       "favicon": "./assets/icon.jpg"
+    },
+    "extra": {
+      "firebase": {
+        "apiKey": "AIzaSyAw5ayuQUZWaKlGrGq0bR7lqiY-kR46x_s",
+        "authDomain": "torneio-3x3-app.firebaseapp.com",
+        "projectId": "torneio-3x3-app",
+        "storageBucket": "torneio-3x3-app.appspot.com",
+        "messagingSenderId": "661895576190",
+        "appId": "1:661895576190:web:1b49334f887712beb1f62f",
+        "measurementId": "G-CV7642F398"
+      }
     }
   },
-  "sourceExts": [ "js", "json", "ts", "tsx", "jsx", "vue"]
+  "sourceExts": [
+    "js",
+    "json",
+    "ts",
+    "tsx",
+    "jsx",
+    "vue"
+  ]
 }

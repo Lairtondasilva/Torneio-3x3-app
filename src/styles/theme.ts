@@ -1,4 +1,4 @@
-import { extendTheme } from "native-base";
+import { extendTheme, Image } from 'native-base';
 
 export const THEME = extendTheme({
     colors:{
@@ -8,9 +8,11 @@ export const THEME = extendTheme({
             800:'#202024',
             600:'#323238',
             300:'#8D8D99',
-            200:'#C4C4CC'
+            200:'#A4A4AF',
+            100:"#DDE3F0"
         },
         green:{
+            200:'#2C685B',
             500:'#18594B',
         },
         yellow:{
@@ -21,6 +23,10 @@ export const THEME = extendTheme({
            500:'#DB4437' 
         },
         white: '#ffffff',
+        dark:{
+            50: '#1F2430',
+            100: '#2A2F3B'
+        }
     },
     fonts:{
         heading:'Roboto_700Bold',
@@ -36,11 +42,12 @@ export const THEME = extendTheme({
         xs: 14,
         sm: 16,
         md: 18,
-        lg: 22,
+        lg: 24,
         xl: 26,
         rt: 32
     },
     sizes:{
-        14: 56
-    }
+        14: 56,
+        32: 128
+    },
 });
